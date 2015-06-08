@@ -3547,7 +3547,8 @@ Content Type : HomePage
 
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="http://iplusstd.com/koemei/search-input-plugin/koemeiSearchInput/koemeiSearchInput.min.js"></script>
+  <script src="http://iplusstd.com/koemei/search-input-plugin/koemeiSearchInput/koemeiSearchInput.js"></script>
+  <script src="http://iplusstd.com/koemei/search-input-plugin/js/typeahead.min.js"></script>
   <script>
     jQuery(document).ready(function($) {
       $('#search-input').KoemeiSearchInput({
@@ -3566,6 +3567,19 @@ Content Type : HomePage
   }
   .koemei-suggestion .date-item {
     float: left;
+  }
+  .koemei-suggestion .MediaListItem-segments {
+    margin-top: 0;
+  }
+  .koemei-suggestion .MediaListItem-segments li {
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+  .koemei-suggestion .MediaListItem-segments li a {
+    float: left;
+  }
+  .koemei-suggestion .MediaListItem-segments.active {
+    line-height: 10px;
   }
   </style>
 </body>
