@@ -190,7 +190,7 @@
     				    				    				    					<a href="https://webapps.bmc.com/Shibboleth.sso/Login?target=https://www.bmc.com/support/reg/support-central.html" class="nav-login nav-login-header">Support Login</a>
     				    			</li>
 				    			<li class="append-around-low-resolution" data-set="search-site">
-    				<form action="/search/" class="search-site">
+    				<form id="search-form" action="search.html" class="search-site">
     					<a href="index.html#" class="nav-search-toggle"></a>
     					<fieldset>
     						<ol>
@@ -3555,6 +3555,12 @@ Content Type : HomePage
         key: 'a4326364cdc04ef3806432e3827fd5a1',
         align: 'right'
       });
+      $("#search-input").keypress(function(event) {
+        if (event.which == 13) {
+          event.preventDefault();
+          $("#search-form").submit();
+        }
+      });
     });
   </script>
 
@@ -3574,6 +3580,7 @@ Content Type : HomePage
   .koemei-suggestion .MediaListItem-segments li {
     line-height: 20px;
     margin-bottom: 0;
+    float: left;
   }
   .koemei-suggestion .MediaListItem-segments li a {
     float: left;
