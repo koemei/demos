@@ -455,13 +455,13 @@ document.write(unescape("%3Cscript src='" + document.location.protocol +
   "//munchkin.marketo.net/munchkin.js' type='text/javascript'%3E%3C/script%3E"));
 </script>
 <script>Munchkin.init('725-MNO-094');</script>
-    <script src="http://iplusstd.com/koemei/search-input-plugin/koemeiSearchInput/koemeiSearchInput.js"></script>
-    <script src="http://iplusstd.com/koemei/search-input-plugin/js/typeahead.min.js"></script>
+    <script src="/koemei-search-bar.min.js"></script>
     <script>
       jQuery(document).ready(function($) {
-        $('#search-bar-input').KoemeiSearchInput({
+        $('#search-bar-input').KoemeiSearchBar({
           key: 'e44b41bbc9e94a4ca63a495328917d02',
-          align: "right"
+          align: "right",
+          highlightColor: '#DB404A'
         });
       });
     </script>
